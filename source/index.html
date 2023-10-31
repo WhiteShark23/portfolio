@@ -9,54 +9,124 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+    <div class="wrapper page">
+      <header class="header">
+        <video preload="auto" autoplay muted playsinline loop src="./video/background-hero.mp4"></video>
+        <div class="container">
+          <h1 class="fadeInLeft wow" data-wow-duration="2s">
+            Всем привет! Меня зовут Сергей Богданов. Я начинающий веб-разработчик.
+          </h1>
+          <a class="btn btn--hero fadeInLeft wow" data-wow-duration="2s" data-wow-delay="500ms">Узнать больше</a>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="about page__about">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <h2 class="fadeIn wow" data-wow-duration="2s">Обо мне</h2>
+            <div class="about__wrapper">
+              <div class="about__img fadeInLeft wow" data-wow-duration="2s" data-wow-delay="1s">
+                <picture>
+                  <source type="image/webp" srcset="img/bogdanov.webp 1x">
+                  <img src="img/bogdanov.jpg" alt="Красавчик сидит на кожанном стуле." width="358" height="253">
+                </picture>
+              </div>
+              <p class="fadeInLeft wow"  data-wow-duration="2s" data-wow-delay="400ms">
+                Я начал свой путь в веб-разработку летом 2022 года в <a href="https://htmlacademy.ru/profile/id1892993" target="_blank">HTML-academy</a> по професии фронтенд-разработчик.
+                За время учебы которая длилась год я полюбил эту специальность. Хочу работать, учиться и развиваться в этом направлении.
+                Не имею на данный момент коммерческого опыта, но нетерпится поскорей его получить. Готов работать с переработками, изучить требуемый стек и выдать максимальную самоотдачу работе.
+              </p>
+            </div>
+            <div class="about__wrapper-family">
+              <p class="fadeInUp wow"  data-wow-duration="2s" data-wow-delay="500ms">
+                Что я могу рассказать о себе. Мне 26 лет, у меня есть жена и две прерасные дочери год и два года от роду,а так же маленький черный кот. Проживаю на Юге нашей необьятной страны России всю свою жизнь.
+                Свободное время провожу за учебой,есть основная работа абсолютно не связанная с данной специализацией,а хотелось бы заниматься большую часть времени любимым делом.Из особенностей я картавлю.
+              </p>
+              <div class="about__img fadeInRight wow"  data-wow-duration="2s" data-wow-delay="800ms">
+                <picture>
+                  <source type="image/webp" srcset="img/family.webp 1x">
+                  <img src="img/family.jpg" alt="Моя Семья." width="358" height="253">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects page__projects">
+          <div class="container">
+            <h2 class="fadeIn wow" data-wow-duration="2s">Мои проекты</h2>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <div class="project-card">
+                  <div class="project-card__info fadeInLeft wow" data-wow-duration="1s">
+                    <h3>Фитнес</h3>
+                    <div class="project__btn">
+                      <a class="btn btn--hero" href="https://whiteshark23.github.io/fitness-2.0" target="_blank">Опубликованная версия</a>
+                      <a class="btn btn--hero" href="https://github.com/WhiteShark23/fitness-2.0" target="_blank">Код на github</a>
+                    </div>
+                  </div>
+                  <a class="project__link project__link--fitness fadeInRight wow" data-wow-duration="1s" href="https://whiteshark23.github.io/fitness-2.0" target="_blank">
+                    <svg width="205" height="60">
+                      <use href="img/sprite.svg#supergym"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="projects__item">
+                <div class="project-card">
+                  <div class="project-card__info fadeInLeft wow" data-wow-duration="1s">
+                    <h3>Путешествия</h3>
+                    <div class="project__btn">
+                      <a class="btn btn--hero" href="https://whiteshark23.github.io/Trips" target="_blank">Опубликованная версия</a>
+                      <a class="btn btn--hero" href="https://github.com/WhiteShark23/Trips" target="_blank">Код на github</a>
+                    </div>
+                  </div>
+                  <a class="project__link fadeInRight wow" data-wow-duration="1s" href="https://whiteshark23.github.io/Trips" target="_blank">
+                    <svg width="205" height="60">
+                      <use href="img/sprite.svg#lifetour"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contacts page__contacts">
+          <div class="container">
+            <h2>Мои контакты</h2>
+            <div class="contacts__wrapper">
+              <a href="tel:+79892454651">+7 989 245 46 51</a>
+              <a href="mailto:serbog230797@gmail.com">serbog230797@gmail.com</a>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer page__footer">
+        <div class="container">
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://vk.com/bogdanov132" target="_blank" aria-label="Вконтакте.">
+                <svg width="50" height="50">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/white_shark23" target="_blank" aria-label="Телеграм.">
+                <svg width="50" height="50">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://instagram.com/sa_bogdanov?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank" aria-label="Инстаграм.">
+                <svg width="50" height="50">
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

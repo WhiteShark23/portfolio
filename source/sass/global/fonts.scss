@@ -1,8 +1,17 @@
 @font-face {
+  font-family: "Tinos";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/Tinos-Regular.woff2") format("woff2"),
+    url("../fonts/Tinos-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Tinos-Bold.woff2") format("woff2"),
+    url("../fonts/Tinos-Bold.woff") format("woff");
 }

@@ -1,14 +1,16 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
+  const WOW = require('wowjs');
+  window.wow = new WOW.WOW({
+    live: false,
+  });
+  window.wow.init();
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules

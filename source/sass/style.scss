@@ -2,8 +2,13 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
 // Swiper 8.4.7
 // @import "vendor/swiper";
+
+// wowjs 1.1.3
+
+@import "../../node_modules/wowjs/css/libs/animate";
 
 // Global
 // ---------------------------------
@@ -23,6 +28,14 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/about.scss";
+@import "blocks/projects.scss";
+@import "blocks/project-card.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
 
 // ---------------------------------
 

@@ -1,0 +1,18 @@
+.projects {
+  h2 {
+    @include reset-style;
+
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+.projects__list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+}

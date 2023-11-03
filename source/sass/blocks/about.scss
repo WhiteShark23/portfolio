@@ -4,6 +4,10 @@
   color: $color-default-white;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
+  @include vp-767 {
+    clip-path: none;
+  }
+
   h2 {
     @include reset-style;
 
@@ -16,6 +20,13 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .about__wrapper-family {
@@ -24,4 +35,12 @@
   justify-content: end;
   gap: 20px;
   margin-top: -200px;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
 }

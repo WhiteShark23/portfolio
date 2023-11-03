@@ -1,7 +1,11 @@
 .contacts {
-  background-image: linear-gradient(177deg,rgba(39, 36, 73, 1) 0%,rgba(133, 164, 170, 1) 100%);
-  clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+  background-image: linear-gradient(177deg, rgba(39, 36, 73, 1) 0%, rgba(133, 164, 170, 1) 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   color: $color-default-white;
+
+  @include vp-767 {
+    clip-path: none;
+  }
 
   h2 {
     @include reset-style;
@@ -29,8 +33,8 @@
     transition: all 200ms ease;
     padding: 5px 10px;
 
-    &:before {
-      content:'';
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -42,12 +46,11 @@
     }
 
     @include hover {
-      background-image: linear-gradient(135deg,rgba(39, 36, 73, 1),rgba(133, 164, 170, 1));
+      background-image: linear-gradient(135deg, rgba(39, 36, 73, 1), rgba(133, 164, 170, 1));
       -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
       background-clip: text;
 
-      &:before {
+      &::before {
         width: 100%;
       }
     }

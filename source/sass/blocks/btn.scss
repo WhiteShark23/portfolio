@@ -15,30 +15,29 @@
     position: relative;
     background-image: linear-gradient(135deg, rgba(39, 36, 73, 1), rgba(133, 164, 170, 1));
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
     border: 2px solid transparent;
-    border-image: linear-gradient(135deg,rgba(39, 36, 73, 1),rgba(133, 164, 170, 1));
+    border-image: linear-gradient(135deg, rgba(39, 36, 73, 1), rgba(133, 164, 170, 1));
     border-image-slice: 1;
     transition: all 500ms ease;
 
-    &:before {
-      content:'';
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 0;
       height: 100%;
-      background-image: linear-gradient(135deg,rgba(39, 36, 73, 1),rgba(133, 164, 170, 1));
+      background-image: linear-gradient(135deg, rgba(39, 36, 73, 1), rgba(133, 164, 170, 1));
       transition: all 500ms ease;
       z-index: -1;
     }
 
     @include hover {
-      -webkit-text-fill-color: #fff;
+      -webkit-text-fill-color: $color-default-white;
       background-image: none;
 
-      &:before {
+      &::before {
         width: 100%;
       }
     }

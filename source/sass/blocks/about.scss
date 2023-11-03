@@ -4,7 +4,7 @@
   color: $color-default-white;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
-  @include vp-767 {
+  @include vp-1199 {
     clip-path: none;
   }
 
@@ -20,6 +20,9 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+
 
   @include vp-767 {
     display: flex;
@@ -36,11 +39,14 @@
   gap: 20px;
   margin-top: -200px;
 
+  @include vp-1199 {
+    margin-top: 40px;
+  }
+
   @include vp-767 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
   }
 }

@@ -12,13 +12,8 @@
       fill: $color-default-white;
     }
 
-    &:hover,
-    &:focus {
+    @include hover-focus {
       opacity: 0.5;
-    }
-
-    &:active {
-      opacity: 0.7;
     }
   }
 }

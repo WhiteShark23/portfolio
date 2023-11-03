@@ -1,9 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {getScroll} from './modules/init-scroll';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  getScroll();
   const WOW = require('wowjs');
   window.wow = new WOW.WOW({
     live: false,

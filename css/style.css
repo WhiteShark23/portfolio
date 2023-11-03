@@ -4106,6 +4106,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .about__wrapper-family {
@@ -4272,13 +4273,8 @@ button,
   fill: #ffffff;
 }
 
-.social__item a:hover,
-.social__item a:focus {
+.social__item a.focus-visible:focus {
   opacity: 0.5;
-}
-
-.social__item a:active {
-  opacity: 0.7;
 }
 
 /* @mixin hover-focus {
@@ -4322,15 +4318,18 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .container {
     padding: 0 32px;
   }
-}
 
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
+  .about {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .about__wrapper-family {
+    margin-top: 40px;
   }
 }
 
@@ -4374,11 +4373,6 @@ button,
     line-height: 40px;
   }
 
-  .about {
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
-
   .about__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4409,7 +4403,6 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 0;
   }
 
   .projects h2 {
@@ -4537,5 +4530,9 @@ button,
 
   .contacts__wrapper a:hover:not(.focus-visible)::before {
     width: 100%;
+  }
+
+  .social__item a:hover:not(.focus-visible) {
+    opacity: 0.5;
   }
 }
